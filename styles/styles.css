@@ -1,0 +1,86 @@
+ @keyframes move {
+     from {
+         left: 0px;
+     }
+     to {
+         left: 1900px;
+     }
+ }
+ 
+ @keyframes birds {
+     0% {
+         transform: translatex(-30px) translatey(-30px)
+     }
+     50% {
+         transform: translatex(20px) translatey(20px);
+     }
+     100% {
+         transform: translatex(-30px) translatey(-30px)
+     }
+ }
+ 
+ @keyframes sun {
+     0% {
+         transform: translatex(30px) translatey(30px)
+     }
+     50% {
+         transform: translatex(-20px) translatey(-20px);
+     }
+     100% {
+         transform: translatex(-30px) translatey(-30px)
+     }
+ }
+ 
+ .background {
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     position: relative;
+ }
+ 
+ .dog {
+     width: 22%;
+     margin-top: 610px;
+     position: absolute;
+     animation: move 5s linear infinite;
+ }
+ 
+ .cat {
+     width: 10%;
+     position: absolute;
+     margin-top: 680px;
+     margin-left: 470px;
+     animation: move 5s linear infinite;
+ }
+ 
+ .mouse {
+     width: 5%;
+     position: absolute;
+     margin-top: 690px;
+     margin-left: 750px;
+     animation: move 5s linear infinite;
+ }
+ 
+ .sun {
+     width: 15%;
+     margin-left: 1500px;
+     margin-top: 40px;
+     position: absolute;
+     transform: rotate(320deg);
+     animation: sun 2s infinite;
+ }
+ 
+ .birds {
+     width: 10%;
+     margin-top: 30px;
+     margin-left: 30px;
+     position: absolute;
+     transform: rotate(25deg);
+     animation: birds 2s infinite;
+ }
+ 
+ .cloud {
+     width: 30%;
+     position: absolute;
+     animation: move 30s infinite;
+ }
