@@ -20,14 +20,11 @@
  }
  
  @keyframes sun {
-     0% {
-         transform: translatex(30px) translatey(30px)
+     from {
+         transform: rotate(0deg)
      }
-     50% {
-         transform: translatex(-20px) translatey(-20px);
-     }
-     100% {
-         transform: translatex(-30px) translatey(-30px)
+     to {
+         transform: rotate(360deg)
      }
  }
  
